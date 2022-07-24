@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Minifinans</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container align-items-start mt-2">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-nav-main mt-2">
+              <li class="nav-item"><a class="nav-link" href="#">Hur lånar man?</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Frågor & svar</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kontakta oss</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="page page-home">
+        <div class="block block-cta">
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-md-6 d-flex">
+                <div class="content align-self-center text-center text-md-start my-5 mt-md-0">
+                  <h1>Vi löser dina lånebehov snabbt och enkelt</h1>
+                  <p>Minifinans erbjuder dig att låna upp till 5 000 kr vid behov av en tillfällig ekonomisk lösning. Våra lån är fri från löpande ränta och med valfri återbetalningstid upp till 12 månader.</p>
+                  <a class="btn btn-primary" target="_self" href="#">Ansök</a>
+                </div>
+              </div>
+              <div class="d-none d-md-flex col-md-6">
+                <div class="image pb-5">
+                  <img class="img-fluid" src="img/phone.png" alt="#">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block-calculator">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-sm-9 col-lg-5 m-auto">
+                <div class="title text-center">
+                  <h3>Enkelt & Säkert Mikrolån</h3>
+                  <p class="subtitle">representativt exempel:</p>
+                </div>
+
+                <div class="calculator-input mb-4">
+                  <label class="form-label d-flex justify-content-between" for="loan-amount">
+                    Hur mycket vill du låna?
+                    <em><span>500</span> kr</em>
+                  </label>
+                  <input type="range" class="custom-form-range" value="500" min="500" step="500" max="10000" id="loan-amount">
+                  <div class="legend d-flex justify-content-between">
+                    <span>Minimum 500 kr</span>
+                    <span>Maximum 10 000 kr</span>
+                  </div>
+                </div>
+
+                <div class="calculator-input mb-4">
+                  <label class="form-label d-flex justify-content-between" for="loan-duration">
+                    Aterbetalningsperiod
+                    <em><span>3</span> månader</em>
+                  </label>
+                  <input type="range" class="custom-form-range" value="3" min="1" step="1" max="12" id="loan-duration">
+                  <div class="legend d-flex justify-content-between">
+                    <span>Minimum 1 månad</span>
+                    <span>Maximum 12 månader</span>
+                  </div>
+                </div>
+
+                <div class="calculator-result">
+                  <div class="row g-1 mx-1">
+                    <div class="col-md-6">
+                      <div class="p-3">
+                        Månadskostnad <em><span id="monthly-cost">0</span> kr</em>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="p-3">
+                        Att återbetala <em><span id="total-cost">0</span> kr</em>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Effektiv ränta <span id="interest-rate">0</span>%, läs våra vilkor, se sekki-blamkett</p>
+                </div>
+                <div class="button">
+                  <button class="btn btn-primary w-100" type="button">Ansök och fa svar direkt</button>
+                </div>
+              </div>
+              <div class="text col-md-9 m-auto text-center mb-3">
+                <p>Det här är en högkostnadskredit. Om du inte kan betala tillbaka hela skulden riskerar du en betalningsanmärkning. För stöd vänd dig till budget-och skuldrådgivningen i din kommun. Kontaktuppgifterfinns finns på hallåkonsument.se</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block-features">
+          <div class="items">
+            <div class="container text-center">
+              <h3>Så fungerar vår låneprocess</h3>
+              <div class="row text-center">
+                <div class="col-md-4">
+                  <span>Ansökning</span>
+                  <p>Välj lånebelopp och återbetalningstid. Du kan låna 500 kr - 5000 kr med en återbetalningstid på hela 12 månader.</p>
+                </div>
+                <div class="col-md-4">
+                  <span>ID & Kreditprövning</span>
+                  <p>Din ansökan granskas automatiskt och du får besked direkt på skärmen!</p>
+                </div>
+                <div class="col-md-4">
+                  <span>Utbetalning</span>
+                  <p>Om din ansökan godkänns efter kreditprövningen så kommer ansök belopp att utbetalas till ditt konto. Läs mer på sidan hur lånar man?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block-details">
+          <div class="container content pb-5">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="text-content">
+                  <h3>Lån på sunda villkor!</h3>
+                  <ul class="list-unstyled">
+                    <li>Vara folkbokförd i Sverige!</li>
+                    <li>Inneha ett mobiladonnemang registrerat på sitt namn!</li>
+                    <li>Inneha svenskt bankkonto registrerat på sitt namn!</li>
+                    <li>Inte ha några betalningsanmärkningar/skuldsaldo eller förelägganden!</li>
+                    <li>Arsinkomsta på minst 120 000 kr/år!</li>
+                    <li>Vara mellan 20-65 år vid ansökningstillfället</li>
+                    <li>Inte ha skyddad identitet!</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 offset-md-2">
+                <div class="image text-center">
+                  <img class="img-fluid" src="img/phone-with-card.png" alt="#">
+                </div>
+                <div class="text-content">
+                  <p class="mb-5">Vi på MiniFinans erbjuder konsumentkrediter i form av mikrolån till alla personer som uppfyller våra krav.</p>
+                  <p>Hos oss är det möjligt att låna mindre belopp med lång återbetalningstid dessutom helt fri från löpande ränta. Vi tar endast ut en uppläggningsavgift vid ansökningstillfället oberoende av lånebelopp. Allt för att du som konsument skall få möjligheten att låna till utgifter som kommer plötsligt men med tryggheten att återbetala i egen takt som passar din ekonomi och månad. Minifinans skyddar din kredit automatiskt vid beviljad ansökan genom ett tryggt låneskydd.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block-cta">
+          <div class="container narrow">
+            <div class="position-relative overflow-hidden text-center pt-5">
+              <div class="content col-md-9 mx-auto pt-5">
+                <h1>Vi löser ditt lånebehov snabbt och enkelt</h1>
+                <p>Kostnadsfri rådgivning-Alltid! Vill du få hjälp med din ekonomi och låna pengar vid akut behov? Kontakta oss så hjälper vi dig att fixa vardagen!</p>
+                <a class="btn btn-outline-secondary img-fluid text-midle my-5" href="#">Fa svar direkt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="share-btn dropend mb-3">
+                <button type="button" class="btn btn-secondary dropdown-toggle pb-2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/share.svg" alt="">
+                  <span>dela</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="btn btn-primary">
+                      <img src="img/share-facebook.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-primary">
+                      <img src="img/share-twitter.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-primary">
+                      <img src="img/share-linkedin.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8 text-center mb-3">
+              <p><a href="#">Help Center (FAQ)</a> | Minifinans is an Authorised Regulatory</p>
+              <p>&copy;2022 Minifinans, Alia rättigheter är reserverade. Se våra villkor här.</p>
+            </div>
+            <div class="col-md-2 text-center">
+              <a class="brand" href="#">
+                <img class="img-fluid" src="img/logo-dark-h.svg" alt="#">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="page page-faq">
+        <div class="container narrow">
+          <h1 class="title text-center my-5">Frågor & svar</h1>
+          <div class="accordion mb-5">
+            <h3>Mikrolån</h3>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p1" aria-expanded="true" aria-controls="acc-p1">Vad är ett Mikrolån?</button>
+              </h4>
+              <div id="acc-p1" class="accordion-collapse collapse show" aria-labelledby="acc-h1">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h2">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p2" aria-expanded="false" aria-controls="acc-p2">Får vem som helst ansöka om mikrolån?</button>
+              </h4>
+              <div id="acc-p2" class="accordion-collapse collapse" aria-labelledby="acc-h2">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h3">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p3" aria-expanded="false" aria-controls="acc-p3">Vad kostar det att ta ett mikrolån?</button>
+              </h4>
+              <div id="acc-p3" class="accordion-collapse collapse" aria-labelledby="acc-h3">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h4">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p4" aria-expanded="false" aria-controls="acc-p4">När har jag pengarna på mitt konto?</button>
+              </h4>
+              <div id="acc-p4" class="accordion-collapse collapse" aria-labelledby="acc-h4">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h5">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p5" aria-expanded="false" aria-controls="acc-p5">Varför har jag fått avslag på grund av låg kreditvärdighet?</button>
+              </h4>
+              <div id="acc-p5" class="accordion-collapse collapse" aria-labelledby="acc-h5">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion mb-5">
+            <h3>Kategori</h3>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h6">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p6" aria-expanded="false" aria-controls="acc-p6">Får vem som helst ansöka om mikrolån?</button>
+              </h4>
+              <div id="acc-p6" class="accordion-collapse collapse" aria-labelledby="acc-h6">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h7">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p7" aria-expanded="false" aria-controls="acc-p7">Vad kostar det att ta ett mikrolån?</button>
+              </h4>
+              <div id="acc-p7" class="accordion-collapse collapse" aria-labelledby="acc-h7">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h8">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p8" aria-expanded="false" aria-controls="acc-p8">När har jag pengarna på mitt konto?</button>
+              </h4>
+              <div id="acc-p8" class="accordion-collapse collapse" aria-labelledby="acc-h8">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="acc-h9">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p9" aria-expanded="false" aria-controls="acc-p9">Varför har jag fått avslag på grund av låg kreditvärdighet?</button>
+              </h4>
+              <div id="acc-p9" class="accordion-collapse collapse" aria-labelledby="acc-h9">
+                <div class="accordion-body">
+                  <p>Ett mikrolån är en av de många benämningarna för ett litet korttidslån oftast med kreditbelopp under 10 000 kronor. Hos Minifinans kan man låna 500 kr, 1000 kr, 1500 kr, 2000kr, 2500 kr, 3000, 3500 kr, 4000 kr, 4500 och 5000 kr i upp till 12 månader.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page page-article">
+        <div class="container narrow">
+          <h1 class="title text-center my-5">Hur Lånar man?</h1>
+          <div class="content">
+            <h3>Så fungerar vår låneprocess</h3>
+            <p>Fyll i din ansökan via ansökningsformuläret på hemsidan, eller i din smartphone och klicka dig vidare!</p>
+            <p>Efter att du fyllt i ansökan klickar du på ansök. Nu kommer du att genomgå en kreditprövning och få besked på skärmen om du blivit beviljat det ansökta kreditbeloppet eller ej. Du kan även automatiskt bli beviljad ett lägre belopp besked får du direkt vid ansökningstillfället.</p>
+            <p>När ditt lån blir beviljad kommer du nu att betala uppläggningsavgiften genom att skicka ett sms till 72550 med följande text Minifinans personnummer Tex Minifinans 750606-6666 till 72550. Vi ser din inbetalning i realtid och utbetalar hela beloppet till angivet konto under samma dag.</p>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-7">
+              <div class="content">
+                <ol class="custom-counter">
+                  <li>
+                    <p>Fyll i din ansökan via ansökningsformuläret på hemsidan, eller i din smartphone och klicka dig vidare!</p>
+                  </li>
+                  <li>
+                    <p>Efter att du fyllt i ansökan klickar du på ansök. Nu kommer du att genomgå en kreditprövning och få besked på skärmen om du blivit beviljat det ansökta kreditbeloppet eller ej. Du kan även automatiskt bli beviljad ett lägre belopp besked får du direkt vid ansökningstillfället.</p>
+                  </li>
+                  <li>
+                    <p>När ditt lån blir beviljad kommer du nu att betala uppläggningsavgiften genom att skicka ett sms till 72550 med följande text Minifinans personnummer Tex Minifinans 750606-6666 till 72550. Vi ser din inbetalning i realtid och utbetalar hela beloppet till angivet konto under samma dag.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="col-md-5 text-center">
+              <div class="image">
+                <img class="img-fluid" src="img/phone-with-card.png" alt="#">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="container narrow">
+            <h3>Så fungerar vår låneprocess</h3>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <span>Ansökning</span>
+                <p>Välj lånebelopp och återbetalningstid. Du kan låna 500 kr - 5000 kr med en återbetalningstid på hela 12 månader.</p>
+              </div>
+              <div class="col-md-4">
+                <span>ID & Kreditprövning</span>
+                <p>Din ansökan granskas automatiskt och du får besked direkt på skärmen!</p>
+              </div>
+              <div class="col-md-4">
+                <span>Utbetalning</span>
+                <p>Om din ansökan godkänns efter kreditprövningen så kommer ansök belopp att utbetalas till ditt konto. Läs mer på sidan hur lånar man?</p>
+              </div>
+            </div>
+            <div class="content">
+              <p>** Lånebeloppet utbetalas under våra öppettider eller senast nästkommande vardag när vi registrerat inbetalningen. MOSMS/Paytech är betalningsförmedlare för uppläggningsavgiften åt Minifinans. Kunder som har Swedbank får utbetalning direkt under våra öppettider.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page page-contact">
+        <div class="container narrow">
+          <h1 class="title text-center my-5">Kontakta oss</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-info mb-5">
+                <h5>Kontaktuppgifter</h5>
+                <address>
+                  <span>Minifinans AB (org.nr 556666-0642)</span>
+                  <br><a href="www.minifinans.se" class="website">www.minifinans.se</a>
+                  <br>Hantverksvägen 15
+                  <br>43633 ASKIM
+                </address>
+                <div class="content">
+                  <p>Minifinans AB är ett konsumentkreditinstitut med tillständ utfärdat av Finansinspektionen.</p>
+                  <span>Bankgiro: 5484-0830<em>(Minifinans AB/Minifinans.se)</em></span>
+                  <ul class="list-unstyled my-2">
+                    <li>
+                      <a class="phone" href="tel:010-722 30 02">Telefon: 031-175 170</a>
+                      <em>(Telefontid 10-12 under vardagar)</em>
+                    </li>
+                    <li>
+                      <a href="mailto:info@minifinans.se" class="mail">E-pos:<strong>info@minifinans.se</strong></a>
+                      <a href="mailto:kundtjanst@minifinans.se" class="mail">E-pos:<strong>kundtjanst@minifinans.se</strong></a>
+                      <em>(endast för frågor kring lån och sammanhängande ärenden)</em>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-form mb-5">
+                <h5>Maila oss enkelt!</h5>
+                <p>Genom vårat kontaktformulär får du svar inom 24 timmar från det att du skickat in e-post till oss. Vi svarar alltid så fort som möjligt!</p>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput" class="form-label">Ditt namn (obligatorisk)</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">Din email (obligatorisk)</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">Ämne</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="form-floating">
+                  <span>Ditt meddelande</span>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                </div>
+                <div class="button text-center">
+                  <a class="btn btn-primary img-fluid" href="#">Skicka</a>
+                </div>
+                <p><a href="" class="privacy-policy">Här kan du ta del av vår integritetspolicy för låntagare.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page page-apply-for-loan">
+        <div class="container narrow">
+          <h1 class="title text-center my-5">Låt Minifinans Kontakta dig</h1>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="text mb-5">
+                <h3>Behöver du finansiering?</h3>
+                <p>Fyll i uppgifterna nedan så blir du kontaktad av en av våra lånehandläggare.</p>
+                <p>Vi tar ingen kreditupplysning när du fyller i det här formuläret.</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="contact-form mb-5">
+                <div class="mb-4">
+                  <label for="formGroupExampleInput" class="form-label">Namn</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">Telefon</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">Org.nr.</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <span>Syfte</span>
+                  <div class="accordion-item mt-2">
+                    <h4 class="accordion-header" id="acc-h10">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-p10" aria-expanded="true" aria-controls="acc-p10">Beskriv ändamålet med lånet</button>
+                    </h4>
+                    <div id="acc-p10" class="accordion-collapse collapse show" aria-labelledby="acc-h10">
+                      <div class="accordion-body">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">E-post</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div><div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">Info</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="button text-center">
+                  <a class="btn btn-primary img-fluid" href="#">Skicka</a>
+                </div>
+                <p><a href="" class="privacy-policy">Här kan du ta del av vår integritetspolicy för låntagare.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page page-article">
+        <div class="container narrow">
+          <h1 class="title text-center my-5">Om oss</h1>
+          <div class="row my-5">
+            <div class="col-md-6">
+              <div class="content">
+                <h3>Minifinans ett sundare och tryggare lån</h3>
+                <p>Vi på Minifinans har som mål att erbjuda privatpersoner ett av marknadens absolut sundaste mikrolån. Vi tror på att lösa plötsliga utgifter med en sund modell utan att belasta låntagarens ekonomi negativt med hög ränta och dyra förlängningskostnader. I dagens moderna samhälle är individen behov av snabb och trygg hjälp oavsett om det är kontakt med myndigheter, kreditinstitut, arbetsgivaren eller handeln. Vi finns där för individen och ditt behov.</p>
+                <p>Därför lånar du alltid räntefritt hos oss på Minifinans vi tar endast ut en uppläggningsavgift som är den samma för alla belopp. Även återbetalningen är sund och trygg för dig som låntagare, upp till 12 månader helt fri från månatlig ränta eller förlängningskostnad. Det innebär att du som låntagare inte behöver känna dig orolig inför att plötsliga utgifter blir dyrt.</p>
+                <p>Vi är övertygade om att vår modell gynnar alla parter och samhällets syn på att mikrolån inte behöver förknippas med ocker. Du kan alltid jämföra våra lån fast vi inte tar ut någon ränta, då jämför du den effektiva räntan.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image">
+                <img class="img-fluid" src="img/demo-img-1.jpg" alt="#">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page page-feedback">
+        <div class="container narrow">
+          <div class="row text-center d-block">
+            <div class="col">
+              <div class="image">
+                <img src="img/logo-light-v.svg" alt="#">
+              </div>
+            </div>
+            <div class="col">
+              <h3>Thank you for your registration</h3>
+              <p class="lead">You have successfully registered for MiniFinans! A confirmation e-mail with further details will be sent shortly.</p>
+            </div>
+          </div>
+          <div class="content text-center my-5">
+            <p><a href="#">Help Center (FAQ)</a> | Minifinans is an Authorised Regulatory</p>
+            <p>&copy;2022 Minifinans, Alia rättigheter är reserverade. Se våra villkor här.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page page-terms-and-conditions">
+        <div class="container narrow">
+          <h1 class="title text-center my-5">Hoppa till innehåll</h1>
+          <div class="subtitle mb-5">
+            <h3>Kreditvillkor för Minifinans AB</h3>
+          </div>
+          <div class="item mb-5">
+            <div class="content">
+              <p class="title">1. Allmänt</p>
+              <p>1.1. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+              <p>1.2. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+            </div>
+            <div class="content">
+              <p class="title">2. Information om behandling av personuppgifter</p>
+              <p>2.1. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+              <p>2.2. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+              <p>2.3. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+              <p>2.4. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+            </div>
+            <div class="content">
+              <p class="title">3. Krediten</p>
+              <p>3.1. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+              <p>3.2. För att kunna länas hos kreditgivning mäste du som Kredittagare uppfylla följande grundläggande krav.</p>
+              <p>3.2.1. Vara folkbokförd i Sverige,</p>
+              <p>3.2.2. Vara mellan 20-65 ar vid ansökningstillfället,</p>
+              <p>3.2.3. Innehat ett mobiladonnemang registrerat i ditt namn,</p>
+              <p>3.3. För att kunna länas hos kreditgivning mäste du som Kredittagare uppfylla följande grundläggande krav.</p>
+            </div>
+            <div class="content">
+              <p class="title">4. Fran kreditansökan till utbetalning av kreditbeloppet</p>
+              <p>4.1. Ansökan sker genom hemsidan <a class="website" href="#">www.minifinans.se</a>.</p>
+              <p>4.2. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+              <p>4.3. Minifinans AB (556666-0642), Hantverksvägen 15, 436 33 ASKIM, bedriver verksamhet med lån- och kreditgivning med tillstånd från Finansinspektionen att enligt lag (2014:275) om viss verksamhet med konsumentkrediter lämna krediter till konsumenter. Lån- och kreditgivningen erbjuds av Minifinans AB, under deras varumärke Minifinans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page block-cta">
+        <div class="container narrow">
+          <div class="position-relative overflow-hidden text-center pt-5">
+            <div class="content col-md-9 mx-auto pt-5">
+              <h1>Vi löser ditt lånebehov snabbt och enkelt</h1>
+              <p>Kostnadsfri rådgivning-Alltid! Vill du få hjälp med din ekonomi och låna pengar vid akut behov? Kontakta oss så hjälper vi dig att fixa vardagen!</p>
+              <a class="btn btn-outline-secondary img-fluid text-midle my-5" href="#">Fa svar direkt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="extras">
+        <div class="container narrow text-center py-5">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <ul class="list-unstyled">
+                <li>
+                  <span>Kundtjänst</span>
+                  <a class="phone d-block mb-4" href="tel:031-175170">031-175170</a>
+                </li>
+                <li>
+                  <span>Hantverksvägen 15,<em>436 33 ASKIM</em></span>
+                  <a href="mailto:info@minifinans.se" class="mail d-block">info@minifinans.se</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+              <ul class="list-unstyled">
+                <li>
+                  <span>Öppetti</span>
+                  <br>Måndag-Fredag: 09:00-17:00
+                  <br>Lordag-Söndag: Stängt
+                  <br>Röda dagar/helgdagar: Stängt
+                  <br>Dag före helgdag: 09:00-12:00
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+              <ul class="product list-unstyled">
+                <li>
+                  <a href="#">Hur Lånar man?</a>
+                </li>
+                <li>
+                  <a href="#">Frågor och svar</a>
+                </li>
+                <li>
+                  <a href="#">Om oss</a>
+                </li>
+                <li>
+                  <a href="#">Kontakta oss</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-2">
+
+            <div class="share-btn dropend mb-3">
+              <button type="button" class="btn btn-secondary dropdown-toggle pb-2" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/share.svg" alt="">
+                <span>dela</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="btn btn-primary">
+                    <img src="img/share-facebook.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-primary">
+                    <img src="img/share-twitter.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-primary">
+                    <img src="img/share-linkedin.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 text-center mb-3">
+            <p><a href="#">Help Center (FAQ)</a> | Minifinans is an Authorised Regulatory</p>
+            <p>&copy;2022 Minifinans, Alia rättigheter är reserverade. Se våra villkor här.</p>
+          </div>
+          <div class="col-md-2 text-center">
+            <a class="brand" href="#">
+              <img class="img-fluid" src="img/logo-dark-h.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
