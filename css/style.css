@@ -31,7 +31,7 @@ header .navbar.shrinked {
 header .navbar .navbar-brand {
   width: 172px;
   height: 84px;
-  background: url("../img/logo-dark-v.svg") no-repeat left center;
+  background: url("https://drive.google.com/uc?export=view&id=1lfcqxAwAHXVEzWTZRLw8QsAg7ynDkgm8") no-repeat left center;
   background-size: contain;
 }
 
@@ -40,7 +40,7 @@ header .navbar.shrinked .navbar-brand {
   margin-bottom: 1.6em;
   width: 220px;
   height: 48px;
-  background: url("../img/logo-light-h.svg") no-repeat left center;
+  background: url("https://drive.google.com/uc?export=view&id=1p-KznLfawNnoLsRrn49Ngku0UREBme0S") no-repeat left center;
   background-size: contain;
 }
 
@@ -100,7 +100,7 @@ header .navbar .navbar-nav .nav-item a {
 
 .block-cta:first-child {
   padding-top: 6em;
-  background: black url("../img/bg1.jpg") no-repeat;
+  background: black url("https://drive.google.com/uc?export=view&id=1MkwX1el_AZIJh--zRdJxmurme1twtBpP") no-repeat;
   background-size: cover;
 }
 
@@ -298,7 +298,7 @@ header .navbar .navbar-nav .nav-item a {
 }
 
 .page-home .block-details {
-  background: #191919 url("../img/bg2.jpg") no-repeat scroll center top;
+  background: #191919 url("https://drive.google.com/uc?export=view&id=1tYNOkuVLO7cL3BG5QMsjdCYgTe-lwP-M") no-repeat scroll center top;
   background-size: cover;
   color: #fff;
 }
